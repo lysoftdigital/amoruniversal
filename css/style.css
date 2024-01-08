@@ -294,18 +294,24 @@ ol {
   Header
 -----------------------*/
 .header {
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   width: 100%;
-  background: transparent;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  z-index: 9;
+ 
+  backdrop-filter: blur(50px); /* Aplica el desenfoque */
+  z-index: 1000;
+  transition: background-color 0.3s ease-in-out; /* Agrega una transición para suavizar el cambio de color */
 }
 
 .header__logo {
   padding: 30px 0;
+
 }
+
+
+
 .header__logo a {
   display: inline-block;
 }
@@ -522,7 +528,7 @@ ol {
 -----------------------*/
 .work {
   overflow: hidden;
-  background: #100028;
+  background: #ffffff;
 }
 
 .work__gallery {
@@ -615,7 +621,7 @@ ol {
   Counter
 -----------------------*/
 .counter {
-  background: #100028;
+  background: linear-gradient(to right,#000000, #3c004b);
   height: 840px;
   padding-top: 380px;
   overflow: hidden;
@@ -783,7 +789,7 @@ ol {
   Latest
 -----------------------*/
 .latest {
-  background: #100028;
+  background: linear-gradient(to right,#000000, #3c004b);
   padding-bottom: 80px;
 }
 
@@ -825,7 +831,7 @@ ol {
 }
 .callto.sp__callto {
   padding-top: 0;
-  background: #100028;
+  background: linear-gradient(to right,#000000, #3c004b);
 }
 
 .callto__text h2 {
@@ -1028,7 +1034,7 @@ ol {
   About
 -----------------------*/
 .about {
-  background: #100028;
+  background: linear-gradient(to right,#000000, #3c004b);
   padding-bottom: 150px;
 }
 
@@ -1129,7 +1135,7 @@ ol {
   Services
 -----------------------*/
 .services {
-  background: #100028;
+  background: linear-gradient(to right,#000000, #3c004b);
   padding-bottom: 60px;
   padding-top: 110px;
 }
@@ -1181,7 +1187,7 @@ ol {
   Services Page
 -----------------------*/
 .services-page {
-  background: #100028;
+  background: linear-gradient(to right,#000000, #3c004b);
   padding-bottom: 50px;
 }
 
@@ -1189,7 +1195,7 @@ ol {
   Logo
 -----------------------*/
 .logo {
-  background: #100028;
+  background: linear-gradient(to right,#000000, #3c004b);
   padding: 100px 20px;
 }
 
@@ -1202,7 +1208,7 @@ ol {
   Portfolio
 -----------------------*/
 .portfolio {
-  background: #100028;
+  background: linear-gradient(to right,#000000, #3c004b);
 }
 
 .portfolio__filter {
@@ -1347,7 +1353,7 @@ ol {
     Blog
 -----------------------*/
 .blog {
-  background: #100028;
+  background: linear-gradient(to right,#000000, #3c004b);
 }
 
 .blog__item {
@@ -1462,7 +1468,7 @@ ol {
   Blog Details
 -----------------------*/
 .blog-details {
-  background: #100028;
+  background: linear-gradient(to right,#000000, #3c004b);
 }
 
 .blog__details__text {
@@ -1679,7 +1685,7 @@ ol {
   Contact Widget
 -----------------------*/
 .contact-widget {
-  background: #100028;
+  background: linear-gradient(to right,#000000, #3c004b);
   padding-bottom: 70px;
 }
 
@@ -1720,7 +1726,7 @@ ol {
   Contact
 -----------------------*/
 .contact {
-  background: #100028;
+  background: linear-gradient(to right,#000000, #3c004b);
   padding-top: 0;
   overflow: hidden;
 }
